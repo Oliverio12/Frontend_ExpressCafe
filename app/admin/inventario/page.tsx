@@ -1,4 +1,3 @@
-// app/(admin)/inventario/page.tsx
 "use client";
 import React, { useState, useMemo } from "react";
 import { useInventario, useEliminarInsumo } from "../../../hooks/useInventario";

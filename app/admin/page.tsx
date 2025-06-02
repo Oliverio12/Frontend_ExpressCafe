@@ -1,4 +1,3 @@
-// app/(admin)/page.tsx
 "use client";
 import React, { useMemo } from "react";
 import { useAuth } from "../../context/AuthContext";

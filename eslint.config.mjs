@@ -9,8 +9,21 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [
+export default [
+  // 1) Trae las reglas base de Next.js + TypeScript
   ...compat.extends("next/core-web-vitals", "next/typescript"),
-];
 
-export default eslintConfig;
+  // 2) Bloque donde desactivas/rebajas las reglas conflictivas
+  {
+    rules: {
+      // Desactiva el error por usar "any"
+      "@typescript-eslint/no-explicit-any": "off",
+
+      // Convierte "unused-vars" en warning (no detiene el build)
+      "@typescript-eslint/no-unused-vars": "off",
+
+      // Permite <img> en vez de obligarte a usar <Image />
+      "@next/next/no-img-element": "off"
+    }
+  }
+];

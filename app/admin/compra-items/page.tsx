@@ -1,4 +1,3 @@
-// app/(admin)/compra-items/page.tsx
 "use client";
 import React, { useState, useMemo } from "react";
 import Link from "next/link";

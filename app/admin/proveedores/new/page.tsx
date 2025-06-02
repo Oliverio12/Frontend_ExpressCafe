@@ -1,4 +1,3 @@
-// app/(admin)/proveedores/new/page.tsx
 "use client";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";

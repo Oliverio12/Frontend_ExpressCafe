@@ -1,4 +1,3 @@
-// app/(admin)/clientes/page.tsx
 "use client";
 import React, { useState, useMemo, useEffect } from "react";
 import Link from "next/link";

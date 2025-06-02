@@ -1,11 +1,10 @@
-// app/(user)/checkout/page.tsx
 "use client";
 
 import React, { useEffect, useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "../../../context/AuthContext";
 import { useClientes, Cliente } from "../../../hooks/useClientes";
-import { useProductos, Producto } from "../../../hooks/useProductos";
+import { useProductos } from "../../../hooks/useProductos";
 import { useCart } from "../../../context/CartContext";
 import { useCrearPedido, PedidoItemInput } from "../../../hooks/usePedidos";
 

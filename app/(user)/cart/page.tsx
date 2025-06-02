@@ -1,4 +1,3 @@
-// app/(user)/cart/page.tsx
 "use client";
 
 import React, { useEffect, useMemo } from "react";
